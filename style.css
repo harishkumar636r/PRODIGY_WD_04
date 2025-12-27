@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.app {
+  text-align: center;
+  background: rgba(255,255,255,0.15);
+  padding: 30px 20px;
+  border-radius: 20px;
+  width: 350px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: #ff6f61;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #e65a50;
+}
+
+.weather-card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.weather-icon {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.weather-info h2 {
+  margin: 10px 0 5px;
+}
+
+.weather-info p {
+  margin: 5px 0;
+}

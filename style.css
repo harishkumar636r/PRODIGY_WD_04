@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -10,29 +15,33 @@ body {
   background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
-  color: #fff;
+  color: #1e293b; 
 }
 
+
 @keyframes gradientBG {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
+
 
 .app {
   text-align: center;
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.35); 
   padding: 30px 20px;
   border-radius: 20px;
   width: 350px;
   backdrop-filter: blur(15px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 h1 {
   margin-bottom: 20px;
   font-weight: 700;
+  color: #0f172a;
 }
+
 
 .search {
   display: flex;
@@ -46,6 +55,7 @@ input {
   border-radius: 10px 0 0 10px;
   border: none;
   outline: none;
+  font-size: 14px;
 }
 
 button {
@@ -53,31 +63,40 @@ button {
   border: none;
   border-radius: 0 10px 10px 0;
   background-color: #ff6f61;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   font-weight: bold;
+  font-size: 14px;
 }
 
 button:hover {
   background-color: #e65a50;
 }
 
+
 .weather-card {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.4);
   border-radius: 20px;
   padding: 20px;
   backdrop-filter: blur(10px);
+  color: #334155;
 }
+
 
 .weather-icon {
   font-size: 60px;
   margin-bottom: 10px;
 }
 
+
 .weather-info h2 {
   margin: 10px 0 5px;
+  color: #020617;
+  font-weight: 600;
 }
 
 .weather-info p {
   margin: 5px 0;
+  color: #334155;
+  font-size: 15px;
 }

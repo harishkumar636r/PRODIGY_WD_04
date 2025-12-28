@@ -15,7 +15,7 @@ searchBtn.addEventListener('click', () => {
     if(city) fetchWeather(city);
 });
 
-// Fetch weather by city (India)
+
 async function fetchWeather(city) {
     try {
         // Automatically append ',IN' for Indian cities
@@ -35,7 +35,7 @@ async function fetchWeather(city) {
     }
 }
 
-// Fetch weather by geolocation (for India)
+
 window.onload = () => {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(position => {
@@ -57,7 +57,7 @@ async function fetchWeatherByCoords(lat, lon) {
     }
 }
 
-// Display weather data
+
 function displayWeather(data) {
     locationEl.textContent = `${data.name}, ${data.sys.country}`;
     temperatureEl.textContent = `Temperature: ${data.main.temp}°C`;
@@ -67,19 +67,19 @@ function displayWeather(data) {
     weatherIcon.textContent = getWeatherIcon(data.weather[0].id);
 }
 
-// Capitalize first letter of condition
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-// Map weather ID to emoji
+
 function getWeatherIcon(id) {
-    if(id >= 200 && id < 300) return "⛈️"; // Thunderstorm
-    if(id >= 300 && id < 500) return "🌦️"; // Drizzle
-    if(id >= 500 && id < 600) return "🌧️"; // Rain
-    if(id >= 600 && id < 700) return "❄️"; // Snow
-    if(id >= 700 && id < 800) return "🌫️"; // Atmosphere
+    if(id >= 200 && id < 300) return "⛈️"; 
+    if(id >= 300 && id < 500) return "🌦️"; 
+    if(id >= 500 && id < 600) return "🌧️"; 
+    if(id >= 600 && id < 700) return "❄️"; 
+    if(id >= 700 && id < 800) return "🌫️"; 
     if(id === 800) return "☀️"; // Clear
-    if(id > 800 && id < 900) return "☁️"; // Clouds
-    return "🌈"; // Default
+    if(id > 800 && id < 900) return "☁️"; 
+    return "🌈"; 
 }

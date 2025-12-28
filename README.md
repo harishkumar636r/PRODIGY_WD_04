@@ -78,7 +78,7 @@ Web Development Intern – Prodigy InfoTech
 🤝 Connect With Me
 
 -  LinkedIn: www.linkedin.com/in/harish-kumar-r-636900r
--  GitHub: [ https://YOUR_USERNAME.github.io/portfolio/](https://github.com/harishkumar636r/https-github.com-HarishPortfolio)
+-  GitHub: https://github.com/harishkumar636r/PRODIGY_WD_04
 
 ---
 

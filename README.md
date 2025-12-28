@@ -45,9 +45,13 @@ It demonstrates practical implementation of **API integration**, **JavaScript DO
 ## 📂 Project Structure
 
 ─ index.html # Main HTML file
+
 ─ style.css # Styling and layout
+
 ─ script.js # JavaScript logic & API integration
+
 ─ README.md # Project documentation
+
 
 ---
 
